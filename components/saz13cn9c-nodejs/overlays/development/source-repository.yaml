@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: saz13cn9c-nodejs-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/saz13cn9c-nodejs

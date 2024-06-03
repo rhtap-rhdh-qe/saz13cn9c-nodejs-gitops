@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: saz13cn9c-nodejs-gitops
+  description: This is GitOps manifest for saz13cn9c-nodejs   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: saz13cn9c-nodejs
+    janus-idp.io/tekton: saz13cn9c-nodejs 
+    backstage.io/kubernetes-id: saz13cn9c-nodejs 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:saz13cn9c-nodejs
